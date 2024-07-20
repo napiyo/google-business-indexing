@@ -1,0 +1,53 @@
+**********************************************									
+ # URL Business Checker v1          
+ * developer : radioactivenarendra@gmail.com
+ * July 2024
+**********************************************
+
+This project is a React and Node.js Express application that allows users to input URLs to check if the domain name appears as a business listing on Google.(when we google domain name, a right side box appears) It uses Axios, Puppeteer, and Cheerio to automate the process. The results indicate whether a business listing exists, the title of the listing, and if the website link in the Google Maps listing matches the domain name.
+
+##Features
+ * Accepts multiple URLs (one per line) via a text input on the home page.
+ * Automates Google search for each domain name.
+ * Checks for business listings on Google.
+ * Verifies if the website link in the Google listing matches the input URL.
+ * Displays results with business name and website link.
+
+#Result Fields
+ * Domain: The input URL.
+ * Business Name: "The title of the business listing on Google. If no business is listed, it shows "NA". If the API fails, it shows the error message.
+ * Domain Linked:
+	"NA" -  if no business is listed.
+	"true" -  if the website in the Google business listing matches the input URL.
+	"LINK" -  if the website does not match; clicking on it will open the URL present on the Google Business listing.
+	"NF" -  if no website is found on the business listing.
+	"err" - Shows the error if the API fails.
+ * Business Found:
+ 	"false" if no business is listed.
+	"true" if a business is listed.
+	"err" if the API fails.
+#INSTALLATION
+ 1. ##NODE
+ 	* It requires node, open cmd or terminal and type "node --version" to check if its already installed or not.
+ 	* "node --version" if gives v21.7.1 (version could be different) then node is already installed.
+ 	* download latest version from here - https://nodejs.org/en/download/prebuilt-installer
+ 	* while installation please mark "add as PATH variable", for all other option leave default
+ 	* after installation again, check "node --version" to confirm installation success.
+ 2. INSTALL TOOL (WINDOWS)
+ 	* Please find INSTALL_AND_BUILD.bat and run it. it needs to be run only once when you want to install this tool, for next time, to run this tool please follow point 3, and skip point 1 and 2.
+        * wait till you see "App is running on local server : http://localhost:5125", anything else means still installing or err.
+	* if you see above message, link "http://localhost:5125" will be opened in your browser, if it does not, you can open browser and go to "http://localhost:5125"
+        * if you see ******************************** FAILED **********************************, please read err or contact radioactivenarendra@gmail.com
+ 3. RUN tool
+	* if you ran INSTALL_AND_BUILD.bat , tool has already started, no need to follow these steps.
+	* after installing point 2, whenever you want to run this tool, please run "START.bat"
+        * and wait till you see "App is running on local server : http://localhost:5125"
+ 	* it will open in your browser if not you can open browser and go to "http://localhost:5125" 
+NOTE: in step 2 or 3, please dont close terminal when Tool is in use, if terminal is closed, server will also stop. 
+#Usage
+   ## INPUT
+ 	* in text input, you should enter only 1 domain in each line, and no comma are allowed.
+        * domain can be in any form like www.facebook.com or facebook.com etc
+        
+## This works on web scrapping concept, this tool just automate process, if google changes its google search page code, this tool might fail, and needs to be updated as per google's new code.
+## for any assistance please mail me Narendra Dewasi - radioactivenarendra@gmail.com

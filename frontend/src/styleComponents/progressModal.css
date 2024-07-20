@@ -1,0 +1,26 @@
+.progressIndicatorsContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.progressIndicatorContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.StopWarningAlert {
+    background: rgba(244, 128, 128, 0.619);
+    box-sizing: border-box;
+    border-radius: 3px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+.StopWarningAlert.show {
+    max-height: 300px;
+    margin-top: 10px;
+    padding: 10px 30px;
+}

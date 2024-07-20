@@ -1,0 +1,13 @@
+{
+    "name": "test",
+    "version": "1.0.0",
+    "description": "checks if domain has business listing on google",
+    "main": "./backend/server.js",
+    "scripts": {
+        "start": "node ./backend/server.js",
+        "buildApp": "npm install --prefix frontend && npm run build --prefix frontend && npm install --prefix backend "
+    },
+    "author": "radioactivenarendra@gmail.com",
+    "license": "ISC"
+
+}
