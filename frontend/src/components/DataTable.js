@@ -117,7 +117,7 @@ export default function DataTable({result,progressData,totalDomainsCount,StartFr
     disableSelectionOnClick 
     autoHeight
     disableColumnMenu 
-    getRowClassName={(data)=> (data.row.isBusiness===true)? "dataTableRow_true":(data.row.isBusiness==false)?"dataTableRow_false":"dataTableRow_error"}
+    getRowClassName={(data)=> (data.row.isBusiness===true)? "dataTableRow_true":(data.row.isBusiness===false)?"dataTableRow_false":"dataTableRow_error"}
     
   sx={{border:"none"}}
     />

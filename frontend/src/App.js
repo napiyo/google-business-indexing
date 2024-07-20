@@ -59,7 +59,7 @@ function App() {
   // to stop process
   const [terminateProcess, setterminateProcess] = useState(false);
 
- 
+ if(terminateProcess){}
 
   const [result, setresult] = useState({rows:[],isBusinessCount:0,domainLinkedCount:0,errCount:0});
 
@@ -121,7 +121,7 @@ function App() {
     let temp_results = [];
     // check index for each domain stored in domainArray
 
-    
+    /* eslint-disable no-loop-func */
     let temp_terminate = false;
     let temp_isBusinessCount=0;
     let temp_domainLinkedCount=0;

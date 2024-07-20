@@ -1,5 +1,4 @@
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@mui/material'
-import React, { useState } from 'react'
 import '../styleComponents/freshStartWarningModal.css'
 
 export default function FreshStartWarningModal({open,setopen,StartFreshSearch}) {

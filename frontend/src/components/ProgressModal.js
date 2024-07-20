@@ -71,7 +71,7 @@ stopProcess();
                   <div className="progressIndicatorContainer">
                       <div>Expected Time Remaining </div>
                       <div>
-                      { (progressData.checkedDomainsCount==0)?"calculating.."
+                      { (progressData.checkedDomainsCount===0)?"calculating.."
                       :  Math.floor(progressData.timeRemaining/60) + " min " + Math.floor(progressData.timeRemaining%60) + " sec "
 
 }</div>
